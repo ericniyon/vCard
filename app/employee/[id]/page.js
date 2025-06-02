@@ -126,8 +126,8 @@ export default function EmployeeDetail({ params }) {
       </div>
       
       {/* Profile Photo */}
-      <div className="relative z-10 -mt-12 flex justify-center">
-        <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-white shadow-sm bg-white">
+      <div className="relative z-10 -mt-12 flex justify-center pt-12">
+        <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white shadow-sm bg-white">
           {employee.photo ? (
             <Image 
               src={employee.photo} 
