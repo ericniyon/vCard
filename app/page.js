@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from 'react';
 import { HexColorPicker } from 'react-colorful';
 import { QRCodeSVG } from 'qrcode.react';
 import { defaultEmployeeData } from './types';
-import Image from 'next/image';
 
 export default function Home() {
   const [employee, setEmployee] = useState(defaultEmployeeData);
