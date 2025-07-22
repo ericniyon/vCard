@@ -1,0 +1,8 @@
+{
+  "/api/employees/[id]/route": "/api/employees/[id]",
+  "/api/employees/route": "/api/employees",
+  "/favicon.ico/route": "/favicon.ico",
+  "/_not-found/page": "/_not-found",
+  "/employee/[id]/page": "/employee/[id]",
+  "/page": "/"
+}
