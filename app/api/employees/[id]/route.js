@@ -1,12 +1,10 @@
 import { NextResponse } from 'next/server';
 import { getEmployee } from '@/app/lib/db';
 
-export async function GET(
-  request,
-  { params }
-) {
+export async function GET(request, context) {
   try {
-    const id = params.id;
+    const { params } = context;
+    const { id } = await params;
     
     if (!id) {
       return NextResponse.json({ error: 'Missing employee ID' }, { status: 400 });
