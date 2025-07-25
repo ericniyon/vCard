@@ -127,7 +127,10 @@ export default function EmployeeDetail({ params }) {
 
   return (
     <div className="min-h-screen flex items-center justify-center py-8 px-2" style={{ background: DARK_BG }}>
-      <div className="w-full max-w-lg" style={{ background: CARD_BG }}>
+      <div
+        className="w-full max-w-full sm:max-w-lg rounded-3xl shadow-2xl border border-gray-100 overflow-hidden flex flex-col"
+        style={{ background: CARD_BG, minHeight: '80vh' }}
+      >
         {/* Header with gradient and profile photo */}
         <div className="relative" style={{ background: `linear-gradient(135deg, ${PRIMARY} 0%, ${YELLOW} 100%)`, height: '11rem' }}>
           <div className="absolute inset-0 opacity-10" style={{ backgroundColor: employee.backgroundColor }} />
