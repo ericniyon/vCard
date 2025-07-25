@@ -126,10 +126,10 @@ export default function EmployeeDetail({ params }) {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-8 px-2" style={{ background: DARK_BG }}>
+    <div className="min-h-screen flex items-center justify-center py-6 px-2 sm:px-4 md:px-8" style={{ background: DARK_BG }}>
       <div
-        className="w-full max-w-full sm:max-w-lg rounded-3xl shadow-2xl border border-gray-100 overflow-hidden flex flex-col"
-        style={{ background: CARD_BG, minHeight: '80vh' }}
+        className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl rounded-3xl shadow-2xl border border-gray-100 overflow-hidden flex flex-col"
+        style={{ background: CARD_BG, minHeight: '70vh' }}
       >
         {/* Header with gradient and profile photo */}
         <div className="relative" style={{ background: `linear-gradient(135deg, ${PRIMARY} 0%, ${YELLOW} 100%)`, height: '11rem' }}>
