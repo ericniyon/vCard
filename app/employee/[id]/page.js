@@ -142,11 +142,12 @@ export default function EmployeeDetail({ params }) {
             <div className="w-28 h-28 rounded-full border-4" style={{ borderColor: YELLOW, background: 'white', boxShadow: '0 4px 16px rgba(10,49,97,0.10)' }}>
               {employee.photo ? (
                 <Image 
-                  src={employee.photo.startsWith('http') ? employee.photo : `/` + employee.photo.replace(/^\/+/, '')}
+                  src={employee.photo.startsWith('http') ? employee.photo : employee.photo}
                   alt={employee.name}
                   width={112}
                   height={112}
                   className="w-full h-full object-cover rounded-full"
+                  unoptimized={employee.photo.startsWith('data:image/')}
                 />
               ) : (
                 <span className="text-4xl" style={{ color: PRIMARY, fontWeight: 700 }}>{employee.name.charAt(0)}</span>
